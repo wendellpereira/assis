@@ -1,0 +1,32 @@
+{
+    "python.defaultInterpreterPath": "./.venv/bin/python",
+    "python.linting.enabled": true,
+    "python.linting.ruffEnabled": true,
+    "python.linting.pylintEnabled": false,
+    "python.linting.flake8Enabled": false,
+    "python.linting.mypyEnabled": false,
+    "python.formatting.provider": "none",
+    "python.linting.ruffPath": "./.venv/bin/ruff",
+    "python.linting.lintOnSave": true,
+    "python.linting.ruffArgs": [
+        "--fix"
+    ],
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.ruff": "explicit",
+        "source.organizeImports.ruff": "explicit"
+    },
+    "ruff.path": [
+        "./.venv/bin/ruff"
+    ],
+    "ruff.importStrategy": "fromEnvironment",
+    "ruff.showNotifications": "onError",
+    "files.associations": {
+        "*.py": "python"
+    },
+    "python.analysis.extraPaths": [
+        "./src"
+    ],
+    "python.analysis.autoImportCompletions": true,
+    "python.analysis.typeCheckingMode": "basic"
+}
