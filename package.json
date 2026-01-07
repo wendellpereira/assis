@@ -1,0 +1,43 @@
+{
+    "name": "assis",
+    "version": "1.0.0",
+    "description": "AI Learning Assistant - React + Express + SQLite",
+    "scripts": {
+        "dev": "concurrently \"npm run server:dev\" \"npm run client:dev\"",
+        "server:dev": "tsx --watch server/index.ts",
+        "server:build": "tsc",
+        "client:dev": "vite",
+        "client:build": "vite build",
+        "preview": "vite preview",
+        "lint": "eslint . --ext .ts,.tsx",
+        "lint:fix": "eslint . --ext .ts,.tsx --fix"
+    },
+    "dependencies": {
+        "@anthropic-ai/sdk": "latest",
+        "cors": "^2.8.5",
+        "dotenv": "^16.4.5",
+        "express": "^4.21.0",
+        "lucide-react": "^0.408.0",
+        "react": "^19.0.0",
+        "react-dom": "^19.0.0",
+        "sqlite3": "^5.1.7"
+    },
+    "devDependencies": {
+        "@types/express": "^4.17.21",
+        "@types/node": "^20.10.6",
+        "@types/react": "^18.2.45",
+        "@types/react-dom": "^18.2.18",
+        "@typescript-eslint/eslint-plugin": "^6.16.0",
+        "@typescript-eslint/parser": "^6.16.0",
+        "@vitejs/plugin-react": "^4.2.1",
+        "autoprefixer": "^10.4.16",
+        "concurrently": "^8.2.2",
+        "eslint": "^8.56.0",
+        "postcss": "^8.4.32",
+        "tailwindcss": "^3.4.1",
+        "ts-node": "^10.9.2",
+        "tsx": "^4.20.6",
+        "typescript": "^5.3.3",
+        "vite": "^5.0.8"
+    }
+}
